@@ -1,5 +1,3 @@
-# main.py
-
 from fastapi import FastAPI, Depends, HTTPException
 from sqlalchemy.ext.asyncio import AsyncSession
 from app import crud, models, schemas
@@ -10,7 +8,7 @@ from fastapi import Depends, HTTPException, status
 app = FastAPI()
 
 
-# Dependency
+# Зависимость
 async def get_db():
     async with SessionLocal() as session:
         yield session

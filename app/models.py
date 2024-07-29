@@ -3,6 +3,7 @@ from sqlalchemy.orm import relationship
 from app.database import Base
 
 
+# Модель клиент
 class Customer(Base):
     __tablename__ = 'customers'
 
@@ -13,6 +14,7 @@ class Customer(Base):
     orders = relationship('Order', back_populates='customer')
 
 
+# Модель категории
 class Category(Base):
     __tablename__ = 'categories'
 
@@ -22,6 +24,7 @@ class Category(Base):
     products = relationship('Product', back_populates='category')
 
 
+# Модель товара
 class Product(Base):
     __tablename__ = 'products'
 
@@ -35,6 +38,7 @@ class Product(Base):
     orders = relationship('Order', back_populates='product')
 
 
+# Модель заказа
 class Order(Base):
     __tablename__ = 'orders'
 
