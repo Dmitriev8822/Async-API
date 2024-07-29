@@ -32,7 +32,7 @@
 1. **Клонируйте репозиторий**:
 
     ```bash
-    git clone https://github.com/yourusername/your-repo.git
+    git clone https://github.com/Dmitriev8822/Async-API.git
     cd your-repo
     ```
 
@@ -49,7 +49,7 @@
    Создайте файл `.env` в корневом каталоге проекта и добавьте строку подключения к базе данных PostgreSQL:
 
     ```
-    DATABASE_URL=postgresql+asyncpg://user:password@localhost/mydatabase
+    DATABASE_URL=postgresql+asyncpg://user:password@localhost/database
     ```
 
 4. **Примените миграции базы данных**:
